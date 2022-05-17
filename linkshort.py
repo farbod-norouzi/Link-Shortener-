@@ -1,19 +1,18 @@
+import os
 from os import system
-
-# Check the requirements
-
-try:
-    import pyshorteners
-    from colorama import Fore
-except ImportError:
-   system("pip install os ")
-   system("pip install colorama ")
-   system("pip install pyshortenerse")
-   exit("\n\nRun script Again")
+import pyshorteners
+from colorama import Fore
+import platform 
 
 # Start APP
+def clear():
+   result = platform.uname()[0]
+   if result == "Windows":
+      system("cls")
+   elif result == "Linux":
+      system("clear")
+clear()
 
-os.system("Cls")
 print(Fore.RED + """ /$$       /$$           /$$              /$$$$$$  /$$                             /$$                                            
 | $$      |__/          | $$             /$$__  $$| $$                            | $$                                            
 | $$       /$$ /$$$$$$$ | $$   /$$      | $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$    /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$ 
