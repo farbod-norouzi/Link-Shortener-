@@ -1,5 +1,5 @@
 # Link-Shortener
-Using this tool, you can shorten your links.
+Using this tool, you can shorten your links
 
 # Plugins required
 - pip install python
