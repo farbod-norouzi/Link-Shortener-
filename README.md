@@ -1,4 +1,4 @@
-# Link-Shortener-
+# Link-Shortener
 Using this tool, you can shorten your links.
 
 # Plugins required
